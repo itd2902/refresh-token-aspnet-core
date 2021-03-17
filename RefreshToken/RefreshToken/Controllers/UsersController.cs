@@ -88,7 +88,7 @@ namespace RefreshToken.Controllers
             }
 
             userModel.RefreshToken = refreshTokenModel.RefreshToken;
-            userModel.TokenExpires = now.AddMinutes(4);
+            userModel.TokenExpires = now.AddMinutes(4); 
 
             return Ok(userModel);
         }
